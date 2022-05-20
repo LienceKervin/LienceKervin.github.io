@@ -6,7 +6,7 @@
   <title> AR.js Marker Demo</title>
   <body style="margin : 0px; overflow: hidden;">
     <a-scene embedded arjs=’sourceType: webcam; sourceWidth:1280; sourceHeight:960; displayWidth: 1280; displayHeight: 960;’>
-      <a-marker circle type='pattern' url='patt/pattern-spheremarker.patt'>
+      <a-marker circle type='pattern' url='patt/pattern-sphere.patt'>
             <a-sphere 
             position="0 0 0" 
             radius="1.25" 
@@ -14,14 +14,14 @@
             color="#FF69B4"
             ></a-sphere>
       </a-marker>
-      <a-marker box type='pattern' url='patt/pattern-boxmarker.patt'>
+      <a-marker box type='pattern' url='patt/pattern-cylin.patt'>
         <a-box 
          position="0 0 0" 
          rotation="0 24 0" 
          color="#48BF53"
          ></a-box>
       </a-marker>
-      <a-marker cyl type='pattern' url='patt/pattern-cylmarker.patt'>
+      <a-marker cyl type='pattern' url='patt/pattern-box.patt'>
         <a-cylinder
         position="0 0 0"
         radius="0.5" 
