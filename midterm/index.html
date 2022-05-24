@@ -14,8 +14,8 @@
 
                 this.el.addEventListener('click', function (e) {
 		
-                    let dragon = document.querySelector('#ball-model')
-		    ball.setAttribute('animation-mixer', "clip: Scene; loop: once;");
+                    let phoenix = document.querySelector('#phoenix-model')
+		   phoenix.setAttribute('animation-mixer', "clip: Scene; loop: once;");
                     this.audio.play();
 			
                   console.log(e)
@@ -37,7 +37,7 @@
                 }.bind(this));
                 this.el.addEventListener('touchstart', function (e) {
 		
-                    let dragon = document.querySelector('#ball-model')
+                    let phoenix = document.querySelector('#phoenix-model')
 		    ball.setAttribute('animation-mixer', "clip: Scene; loop: once;");
                     this.audio.play();
 			console.log(e)
@@ -50,8 +50,8 @@
 		
                 this.el.addEventListener('animation-finished', function (e) {
 			 console.log(e)
-                    let ball = document.querySelector('#ball-model')
-		    ball.removeAttribute('animation-mixer');
+                    let phoenix = document.querySelector('#ball-model')
+		    phoenix.removeAttribute('animation-mixer');
                 }.bind(this));
 		
             }
@@ -63,10 +63,10 @@
   <body style="margin: 0; overflow: hidden;">
     <a-scene renderer="colorManagement: true">
        <a-assets>
-        <a-asset-item id="ball" response-type="arraybuffer" src="./ball.glb"></a-asset-item>
+        <a-asset-item id="phoenix" response-type="arraybuffer" src="./phoenix.glb"></a-asset-item>
         <audio id="roar" src="./assets/roar.wav"></audio>
       </a-assets>
-      <a-entity event-listener id="ball-model"  
+      <a-entity event-listener id="phoenix-model"  
         gltf-model="#ball" 
         scale=".25 .25 .25" 
         position = "0 0 -0" 
