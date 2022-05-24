@@ -38,7 +38,7 @@
                 this.el.addEventListener('touchstart', function (e) {
 		
                     let phoenix = document.querySelector('#phoenix-model')
-		    ball.setAttribute('animation-mixer', "clip: Scene; loop: once;");
+		    phoenix.setAttribute('animation-mixer', "clip: Scene; loop: once;");
                     this.audio.play();
 			console.log(e)
                 }.bind(this));
@@ -50,7 +50,7 @@
 		
                 this.el.addEventListener('animation-finished', function (e) {
 			 console.log(e)
-                    let phoenix = document.querySelector('#ball-model')
+                    let phoenix = document.querySelector('#phoenix-model')
 		    phoenix.removeAttribute('animation-mixer');
                 }.bind(this));
 		
@@ -67,7 +67,7 @@
         <audio id="roar" src="./assets/roar.wav"></audio>
       </a-assets>
       <a-entity event-listener id="phoenix-model"  
-        gltf-model="#ball" 
+        gltf-model="#phoenix" 
         scale=".25 .25 .25" 
         position = "0 0 -0" 
         rotation="0 0 0" 
