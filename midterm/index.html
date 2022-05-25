@@ -15,7 +15,7 @@
                 this.el.addEventListener('click', function (e) {
 		
                     let phoenix = document.querySelector('#phoenix-model')
-		   phoenix.setAttribute('animation-mixer', "clip: Take 001; loop: once;");
+		   phoenix.setAttribute('animation-mixer', "clip: Take 001; loop: repeat;");
                     this.audio.play();
 			
                   console.log(e)
@@ -38,7 +38,7 @@
                 this.el.addEventListener('touchstart', function (e) {
 		
                     let phoenix = document.querySelector('#phoenix-model')
-		    phoenix.setAttribute('animation-mixer', "clip: Take 001; loop: once;");
+		    phoenix.setAttribute('animation-mixer', "clip: Take 001; loop: repeat;");
                     this.audio.play();
 			console.log(e)
                 }.bind(this));
